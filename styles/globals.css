@@ -48,7 +48,7 @@ details > summary::-webkit-details-marker {
   focus:outline-none
   bg-transparent
   border
-  border-cyan-600;
+  border-cyan-600 focus-within:border-cyan-400;
 }
 
 .PhoneInputCountry {

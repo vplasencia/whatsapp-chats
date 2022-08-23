@@ -1,14 +1,31 @@
 import PhoneInput from "react-phone-number-input";
+import { isPossiblePhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import React, { useRef, useEffect, useState } from "react";
 
 export default function ChatForm() {
   const inputRef = useRef();
-  const [phoneValue, setPhoneValue] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
+  const link = `https://api.whatsapp.com/send?phone=${phone}${
+    message && `&text=${encodeURIComponent(message)}`
+  }`;
+
+  const validatePhoneNumber = () => {
+    if (isPossiblePhoneNumber(phone)) return true;
+    setError("Invalid Phone Number");
+    return false;
+  };
 
   const sendMessage = (e) => {
     e.preventDefault();
-    console.log(phoneValue);
+    if (validatePhoneNumber(phone)) {
+      console.log(phone);
+      console.log(message);
+      window.location.assign(link);
+    }
   };
 
   useEffect(() => {
@@ -27,28 +44,13 @@ export default function ChatForm() {
           <label htmlFor="phone" className="text-lg">
             Enter phone number
           </label>
-          {/* <input
-            className="h-12
-            px-3
-            w-full
-            border
-            rounded-lg
-            focus:outline-none
-            bg-transparent
-            border-cyan-600 focus:border-cyan-400"
-            id="phone"
-            type="phone"
-            name="phone"
-          /> */}
-          <div>
-            <PhoneInput
-              placeholder="+12 3 4567890"
-              value={phoneValue}
-              onChange={setPhoneValue}
-              autoComplete="off"
-              ref={inputRef}
-            />
-          </div>
+          <PhoneInput
+            placeholder="+12 3 4567890"
+            value={phone}
+            onChange={setPhone}
+            autoComplete="off"
+            ref={inputRef}
+          />
         </div>
         <div className="grid space-y-2">
           <label htmlFor="message" className="text-lg">
@@ -66,10 +68,13 @@ export default function ChatForm() {
             border
             rounded-lg
             focus:outline-none
+            focus:border-cyan-400
             border-cyan-600
             bg-transparent
 
             "
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
         <div className="flex justify-center items-center">
