@@ -38,3 +38,58 @@ details > summary {
 details > summary::-webkit-details-marker {
   display: none;
 }
+
+/* Styles for the phone input */
+
+.PhoneInput {
+  @apply h-12
+  w-full
+  rounded-lg
+  focus:outline-none
+  bg-transparent
+  border
+  border-cyan-600;
+}
+
+.PhoneInputCountry {
+  @apply h-12
+    px-3
+    flex justify-center items-center gap-1
+    rounded-lg
+    focus:outline-none
+    cursor-pointer
+    bg-transparent;
+}
+
+.PhoneInputInput {
+  @apply h-12
+  w-full
+  rounded-lg
+  focus:outline-none
+  bg-transparent;
+}
+
+.PhoneInputCountrySelectArrow {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  color: #22d3ee !important;
+}
+
+select {
+  @apply bg-slate-900;
+}
+
+* {
+  --PhoneInput-color--focus: none !important;
+  --PhoneInputInternationalIconPhone-opacity: 1 !important;
+  --PhoneInputInternationalIconGlobe-opacity: 1 !important;
+  --PhoneInputCountrySelectArrow-opacity: 1 !important;
+}
+
+.PhoneInputCountryIcon {
+  @apply text-cyan-400;
+}
+
+select {
+  cursor: pointer;
+}
