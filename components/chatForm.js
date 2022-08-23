@@ -13,6 +13,10 @@ export default function ChatForm() {
     message && `&text=${encodeURIComponent(message)}`
   }`;
 
+  //   const link = `https://api.whatsapp.com/send?phone=${
+  //     phone && phone[0] == "+" ? phone?.substring(1) : phone
+  //   }${message && `&text=${encodeURIComponent(message)}`}`;
+
   const validatePhoneNumber = () => {
     if (isPossiblePhoneNumber(phone)) return true;
     setError("Invalid Phone Number");
