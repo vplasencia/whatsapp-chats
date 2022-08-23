@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import Head from "next/head";
+import "@fontsource/open-sans";
 
 export default function Layout({ children }) {
   return (
@@ -37,7 +38,7 @@ export default function Layout({ children }) {
           key="ogdesc"
         />
       </Head>
-      <div className="flex flex-col min-h-screen px-2 bg-gray-900 text-slate-300">
+      <div className="flex flex-col min-h-screen px-2 bg-slate-900 text-slate-300">
         <Header />
         <main className="mb-auto">{children}</main>
         <Footer />

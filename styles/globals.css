@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  animation: 1s appear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  @apply bg-slate-900 w-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-700;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-slate-500 hover:bg-slate-400;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
