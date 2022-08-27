@@ -17,7 +17,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer noopener nofollow"
               className="text-cyan-400 hover:underline"
-              href="https://twitter.com/ViviPlasenciaC"
+              href="https://vivianplasencia.com/"
             >
               Vivian Plasencia
             </a>
