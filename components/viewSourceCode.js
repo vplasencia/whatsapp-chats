@@ -3,7 +3,7 @@ const GITHUB_LINK = "https://github.com/vplasencia/whatsapp-chats";
 export default function ViewSourceCode() {
   return (
     <a
-      className="flex space-x-1 text-cyan-400 font-semibold px-3 py-3 rounded-lg hover:bg-slate-800 transition-all duration-150 ease-linear"
+      className="flex justify-center items-center space-x-1 text-cyan-400 font-semibold px-3 py-3 rounded-lg hover:bg-slate-800 transition-all duration-150 ease-linear"
       href={GITHUB_LINK}
       target="_blank"
       rel="noreferrer noopener nofollow"
