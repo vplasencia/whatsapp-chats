@@ -10,16 +10,22 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <title>WhatsApp Chats</title>
         <meta name="title" content="WhatsApp Chats" />
-        <meta name="description" content="WhatsApp Chats" />
-        <meta name="theme-color" content="#ea580c" />
+        <meta
+          name="description"
+          content="Send WhatsApp messages to people without having them in your contacts"
+        />
+        <meta name="theme-color" content="#06b6d4" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://whatsappchats.vercel.app/" />
+        <meta
+          property="twitter:url"
+          content="https://whatsappchats.vercel.app/"
+        />
         <meta property="twitter:title" content="WhatsApp Chats" />
         <meta
           property="twitter:description"
-          content="WhatsApp Chats"
+          content="Send WhatsApp messages to people without having them in your contacts"
         />
         <meta property="twitter:image" content="/socialMedia.png" />
 
@@ -34,7 +40,7 @@ export default function Layout({ children }) {
         <meta property="og:title" content="WhatsApp Chats" key="ogtitle" />
         <meta
           property="og:description"
-          content="WhatsApp Chats"
+          content="Send WhatsApp messages to people without having them in your contacts"
           key="ogdesc"
         />
       </Head>
