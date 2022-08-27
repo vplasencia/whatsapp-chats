@@ -21,7 +21,7 @@ export default function Layout({ children }) {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://whatsappchats.vercel.app/"
+          content="https://whatsapp-chats.vercel.app/"
         />
         <meta property="twitter:title" content="WhatsApp Chats" />
         <meta
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
         <meta property="og:type" content="website" key="ogtype" />
         <meta
           property="og:url"
-          content="https://whatsappchats.vercel.app/"
+          content="https://whatsapp-chats.vercel.app/"
           key="ogurl"
         />
         <meta property="og:image" content="/socialMedia.png" key="ogimage" />

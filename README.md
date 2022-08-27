@@ -3,7 +3,7 @@
 WhatsApp Chats is a platform that allows you to send WhatsApp messages to people without having them in your contacts.
 
 WhatsApp Chats link:
-<https://whatsappchats.vercel.app/>
+<https://whatsapp-chats.vercel.app/>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and deployed on [Vercel](https://github.com/vercel/vercel).
 
