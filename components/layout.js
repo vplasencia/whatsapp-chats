@@ -8,6 +8,7 @@ export default function Layout({ children }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
         <title>WhatsApp Chats</title>
         <meta name="title" content="WhatsApp Chats" />
         <meta
