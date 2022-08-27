@@ -28,7 +28,10 @@ export default function Layout({ children }) {
           property="twitter:description"
           content="Send WhatsApp messages to people without having them in your contacts"
         />
-        <meta property="twitter:image" content="/socialMedia.png" />
+        <meta
+          property="twitter:image"
+          content="https://whatsapp-chats.vercel.app/socialMedia.png"
+        />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" key="ogtype" />
@@ -37,7 +40,11 @@ export default function Layout({ children }) {
           content="https://whatsapp-chats.vercel.app/"
           key="ogurl"
         />
-        <meta property="og:image" content="/socialMedia.png" key="ogimage" />
+        <meta
+          property="og:image"
+          content="https://whatsapp-chats.vercel.app/socialMedia.png"
+          key="ogimage"
+        />
         <meta property="og:title" content="WhatsApp Chats" key="ogtitle" />
         <meta
           property="og:description"
