@@ -37,7 +37,7 @@ export default function ChatForm() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center md:my-5 py-5">
+    <div className="flex justify-center items-center py-5">
       <form
         className="space-y-10"
         noValidate
