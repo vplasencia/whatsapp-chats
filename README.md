@@ -1,5 +1,7 @@
 # WhatsApp Chats
 
+![WhatsappChats](https://user-images.githubusercontent.com/52170174/187033387-c36e3296-813c-4aa9-8084-2bf6aebce8e0.png)
+
 WhatsApp Chats is a platform that allows you to send WhatsApp messages to people without having them in your contacts.
 
 WhatsApp Chats link:
