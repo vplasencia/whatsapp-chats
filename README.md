@@ -31,4 +31,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Application Image
+## Application Screenshot
+
+![ScreenshotWhatsAppChats](https://user-images.githubusercontent.com/52170174/189407660-1a22ca7f-e302-4502-af09-92f48b54bc29.png)
